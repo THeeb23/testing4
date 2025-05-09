@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Papa Louie Game</title>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/@ruffle-rs/ruffle"></script>
+  </head>
+  <body>
+    <h1>Teags's Papa Louie Games</h1>
+    <div id="game"></div>
+    <script>
+      const ruffle = window.RufflePlayer.newest();
+      const player = ruffle.createPlayer();
+      document.getElementById("game").appendChild(player);
+      player.load("PapaLouie.swf");  // <- MUST MATCH YOUR SWF FILE NAME
+    </script>
+  </body>
+</html>
